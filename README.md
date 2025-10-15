@@ -1,6 +1,6 @@
 # Photovoltaic panel segmentation on building facades
 
-[Ayca Duran](https://systems.arch.ethz.ch/ayca-duran), [Pedram Mirabian](https://www.linkedin.com/in/pmirabian/?originalSubdomain=ch), [Panagiotis Karapiperis](https://www.linkedin.com/in/panagiotis-karapiperis-ethz/?originalSubdomain=ch), [Bernd Bickel](https://berndbickel.com/about-me), [Arno Schlueter](https://systems.arch.ethz.ch/arno-schlueter)
+[Ayca Duran](https://systems.arch.ethz.ch/ayca-duran), [Pedram Mirabian](https://www.linkedin.com/in/pmirabian/?originalSubdomain=ch), [Panagiotis Karapiperis](https://www.linkedin.com/in/panagiotis-karapiperis-ethz/?originalSubdomain=ch), [Christoph Waibel](https://www.linkedin.com/in/christoph-waibel-19205114b/?originalSubdomain=ch), [Bernd Bickel](https://berndbickel.com/about-me), [Arno Schlueter](https://systems.arch.ethz.ch/arno-schlueter)
 
 [[ Paper ]](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5373186) – Submitted, October 2025
 
