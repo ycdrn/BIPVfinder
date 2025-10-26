@@ -13,6 +13,9 @@
 ## Abstract
 Building-integrated photovoltaics (BIPV) on facades are a significant but underutilized source of solar energy in urban environments. Automating the recognition of BIPV on facades through vision based systems can help guide design recommendations and extend solar asset maps. Unlike rooftop photovoltaic (PV) systems, facade BIPV recognition is difficult due to limited visibility in overhead imagery, high visual variability, and the absence of structured datasets. This study proposes a method based on deep learning (DL) for automated segmentation of BIPV panels on building facades using street-level and web images. A new benchmark data set comprising 400 annotated BIPV projects was created, including detailed pixel-level masks and project attributes. Two model architectures, Mask R-CNN and SegFormer, as well as human baselines are evaluated. The SegFormer model outperforms Mask R-CNN in pixel-level metrics. A user study conducted with non-expert annotators provides comparative insight into human performance, revealing common challenges in recognizing facade BIPV. The results demonstrate that DL models, trained specifically for this task, can segment BIPV panels more accurately than the average of human annotators, with SegFormer achieving a mean IoU of 0.69 compared to 0.41. The user study suggests that BIPV with satin or glossy finishes, invisible cells, and a PV-to-Facade ratio of more than half challenge human recognition and therefore can be prioritized in visually sensitive areas. The segmentation model is also utilized to estimate the BIPV energy yield. The annotated dataset and models are made publicly available to facilitate future research.
 
+## Code Setup Instructions
+Tba
+
 ## Model Setup Instructions
 Tba
 <!--- This repository contains the dataset, the pre-trained topic model, and a Python notebook to demonstrate the use of the pre-trained model. --->
