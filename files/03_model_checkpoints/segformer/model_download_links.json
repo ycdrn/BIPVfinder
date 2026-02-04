@@ -1,0 +1,6 @@
+{
+    "SegFormer_random": "@TODO AYCA",
+    "SegFormer_strat": "@TODO AYCA",
+    "SegFormer_stratAug_ADENorm": "@TODO AYCA",
+    "SegFormer_stratAug_noNorm": "@TODO AYCA"
+}
