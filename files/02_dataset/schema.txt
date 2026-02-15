@@ -1,0 +1,23 @@
+The schema for this folder is as follows:
+
+# 02_dataset
+|___schema.txt              # this file
+|___dataset                 # by default, the notebooks use the folder named "dataset"
+    |
+    |___ 00_UnstratUnaug     # variant 0, unstratified, unaugmented data
+    |    |
+    |    |___ train          # training folder incl. images and masks
+    |    |___ valid          # validation folder incl. images and masks
+    |    |___ test           # test folder incl. images and masks
+    |
+    |___ 01_StratUnaug
+    |   |
+    |   |___ train
+    |   |___ valid
+    |   |___ test
+    |
+    |___ 02_StratAug
+        |
+        |___ train
+        |___ valid
+        |___ test
