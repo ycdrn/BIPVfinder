@@ -15,7 +15,15 @@ Building-integrated photovoltaics (BIPV) on facades are a significant but underu
 
 # Setup Instructions
 
-This repository contains the Python scripts and relevant files used in the fine-tuning and evaluation of the pre-trained models, as well evaluation of  human annotations referenced in the publication. 
+This repository contains the Python scripts and relevant files used in the fine-tuning and evaluation of the pre-trained models, as well evaluation of  human annotations referenced in the publication.
+
+The codebase is split in 10 steps:
+* Steps 1 and 2 handle the data collection, downloading of the images, and stratified sampling in order to create a representative dataset. These notebooks are not included in this repo and can be found [here @AYCA TODO here](repo_link).
+* Step 3 deals with the augmentation and creation of the prepared datasets (if using the pre-built datasets you do not need this step).
+* Step 4 and 6(first part) deal with the training of different model architectures, with MaskRCNN and SegFormer respectively.
+* Step 5 and 6(second part) deal with evaluating the trained model on the test dataset (unseen data).
+* Step 8 evaluates the human labeling performance using data from an Amazon mTurk survey.
+* Step 9 and 10 perform a uniform processing of model and human performance and report the metrics and illustrations used in the paper.
 
 In order to facilitate running the scripts, use **Google Colab**, with the files stored on the **Google Drive** of the account running the code. The primary storage requirement arises from the trained model checkpoint files, which are not included seperately (download instructions [below](#model-loading)).
 
@@ -48,16 +56,21 @@ git clone https://github.com/ycdrn/BIPVfinder.git .
 
 ## Dataset Setup
 
-The code uses the folder named "dataset" located in [files/02_dataset](/files/02_dataset/) by default, so the full dataset path will be files/02_dataset/dataset. 
+The code uses the folder named "dataset" located in [files/02_dataset](/files/02_dataset/) by default. 
 
-This dataset is available [here](TODO-link), along with its variants:
-1. UnstratUnaug
-2. StatUnaug
-3. StratAug
+This dataset is available [@AYCA TODO here](TODO-link), along with its variants:
+1. 00_UnstratUnaug
+2. 01_StatUnaug
+3. 02_StratAug
 
-In each case, renaming the desired folder to "dataset" is the method with the least amount of changes needed to run the training and evaluation. You can see the folder schema [here](/files/02_dataset/schema.txt).
+You can see the folder schema [here](/files/02_dataset/schema.txt).
+Therefore, the full dataset path will for example be 
 
-## Model Loading Setup
+```
+files/02_dataset/dataset/StratAug/train/image.jpg
+```
+
+## Model Loading
 
 **Fine-tune models from pre-trained:** This project uses pre-trained MaskRCNN and SegFormer models available on Detectron2 and HuggingFace, which are then fine-tuned in [4_MaskRCNN_training](/code/4_MaskRCNN_training.ipynb) and [6_SegFormer_training](/code/6_SegFormer_training.ipynb). Following these scripts will download the pre-trained (but not yet fine-tuned) model checkpoints in [files/03_model_checkpoints](/files/03_model_checkpoints/), and proceed with fine-tuning.
 
