@@ -78,7 +78,7 @@ files/02_dataset/dataset/StratAug/train/image.jpg
 
 **Fine-tune models from pre-trained:** This project uses pre-trained MaskRCNN and SegFormer models available on Detectron2 and HuggingFace, which are then fine-tuned in [4_MaskRCNN_training](/code/4_MaskRCNN_training.ipynb) and [6_SegFormer_training](/code/6_SegFormer_training.ipynb). Following these scripts will download the pre-trained (but not yet fine-tuned) model checkpoints in [files/03_model_checkpoints](/files/03_model_checkpoints/), and proceed with fine-tuning.
 
-**Load already fine-tuned models**: Instead of fine-tuning from scratch, the models referred to in the paper can be found in [Hugging Face](https://huggingface.co/aycaduran/BIPVfinder). These checkpoint files need to be downloaded manually (or using Colab) and placed in [files/03_model_checkpoints](/files/03_model_checkpoints/), and selected in the model evaluation scripts [5_MaskRCNN_eval.ipynb](/code/5_maskrcnn_eval.ipynb) and [7_SegFormer_eval.ipynb](/code/7_segformer_eval.ipynb)
+**Load already fine-tuned models**: Instead of fine-tuning from scratch, the models referred to in the paper can be found in [Hugging Face](https://huggingface.co/aycaduran/BIPVfinder). These checkpoint files need to be downloaded manually (or using Colab) and placed in [files/03_model_checkpoints](/files/03_model_checkpoints/).
 
 ## Citation
 If using our dataset/model, please cite us as follows:
