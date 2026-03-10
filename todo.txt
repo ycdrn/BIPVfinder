@@ -1,3 +1,0 @@
-[] humans batch.csv file from Amazon mTurk
-[] test masks
-[] segformer dataset is different

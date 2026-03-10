@@ -26,8 +26,13 @@ The codebase is split in 10 steps:
 * Step 3 deals with the augmentation and creation of the prepared datasets (if using the pre-built datasets you do not need this step).
 * Step 4 and 6 (first part) deal with the training of different model architectures, with MaskRCNN and SegFormer respectively.
 * Step 5 and 6 (second part) deal with evaluating the trained model on the test dataset (unseen data).
+* Step 7 is integrated into step 6 which also handles the evaluation of the SegFormer model.
 * Step 8 evaluates the human labeling performance using data from an Amazon mTurk survey.
 * Step 9 and 10 perform a uniform processing of model and human performance and report the metrics and illustrations used in the paper.
+
+A schematic of the data pipeline is illustrated below: 
+
+![Schematic representation data pipeline.](/data_pipeline.jpg)
 
 In order to facilitate running the scripts, use **Google Colab**, with the files stored on the **Google Drive** of the account running the code. The primary storage requirement arises from the trained model checkpoint files, which are not included seperately (download instructions [below](#model-loading)).
 
